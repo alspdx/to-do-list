@@ -1,0 +1,59 @@
+body {
+  background-color: #282725;
+  color: #FF9A3C;
+}
+
+
+form input {
+  background: transparent;
+  color: #FFBC2C;
+  border: 2px solid #FFBC2C;
+  border-radius: 8px;
+  font-size: 30px;
+  width: 100%;
+}
+
+button {
+  background: transparent;
+  color: #86B86B;
+  border: 2px solid #86B86B;
+  border-radius: 8px;
+  font-size: 30px;
+  width: 100%;
+}
+
+
+#to-do-details {
+  display: none;
+}
+
+#to-do-item {
+  cursor: pointer;
+  color: #ECECEC;
+  font-size: 30px;
+}
+
+#to-do-item:hover {
+  text-decoration: underline;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+h1, h3{
+  color: #86B86B;
+}
+
+.to-do-header {
+  display: none;
+}
+
+.strike-thru {
+  text-decoration: line-through;
+  color: #FF9A3C;
+}
+
+.margin {
+  margin-top: 60px;
+}
