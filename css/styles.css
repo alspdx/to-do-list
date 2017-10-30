@@ -33,19 +33,19 @@ button {
   font-size: 30px;
 }
 
-#to-do-item:hover {
-  text-decoration: underline;
-}
-
 .jumbotron {
-  background: transparent;
+  background-image: url('../images/todolist.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
 
 h1, h3{
   color: #86B86B;
 }
 
-.to-do-header {
+.to-do {
   display: none;
 }
 
@@ -56,4 +56,8 @@ h1, h3{
 
 .margin {
   margin-top: 60px;
+}
+
+.no-task {
+  display: none;
 }

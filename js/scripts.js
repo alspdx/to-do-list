@@ -3,23 +3,28 @@ function Task(taskName, taskDetails) {
   this.detail = taskDetails;
 }
 
-
-
 $(function() {
   $(document).submit(function(event) {
     event.preventDefault();
 
     var nameInput = $("#name").val();
     var detailsInput = $("#task-details").val();
-
     var newTask = new Task(nameInput, detailsInput);
 
-    $(".to-do-header").show();
+    if (nameInput) {
+      $("#to-do-item").append("<span class='list-output'><dt><span class='list-item'>" + newTask.name + "</span></dt><dd>" + newTask.detail + "</span>");
+      $(".no-task").slideUp();
+      $(".to-do").slideDown();
+    } else {
+      $(".no-task").slideDown();
+    }
 
-    $("#to-do-item").append("<span class='remove-list'><dt><span class='list-item'>" + newTask.name + "</span></dt><dd>" + newTask.detail + "</span>");
-
-    $(".remove-list").last().click(function() {
+    $(".list-output").click(function() {
+      $(this).removeClass("list-output");
       $(this).addClass("strike-thru");
+      $(".strike-thru").click(function() {
+        $(this).slideUp();
+      });
     });
   });
 });
