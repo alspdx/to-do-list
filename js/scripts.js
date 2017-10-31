@@ -10,6 +10,8 @@ $(function() {
     var nameInput = $("#name").val();
     var detailsInput = $("#task-details").val();
     var newTask = new Task(nameInput, detailsInput);
+    $("#name").val("");
+    $("#task-details").val("");
 
     if (nameInput) {
       $("#to-do-item").append("<span class='list-output'><dt><span class='list-item'>" + newTask.name + "</span></dt><dd>" + newTask.detail + "</span>");

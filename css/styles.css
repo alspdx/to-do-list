@@ -38,11 +38,17 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 100%;
+  width: auto;
 }
 
 h1, h3{
   color: #86B86B;
+}
+
+.jumbotron h1 {
+  color: transparent;
+  padding: 100px;
 }
 
 .to-do {
